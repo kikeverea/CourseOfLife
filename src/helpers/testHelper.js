@@ -9,25 +9,31 @@ const testSections =
             courseList: [
                 {
                     name : 'Java Masterclass',
-                    platform: 'Udemy',
+                    platform: {
+                        name: 'Udemy',
+                        icon: '/icons/python.svg'
+                    },
                     skills : 'A lot',
-                    projectCount : 15,
                     obtained : 'Learning Programming Certificate',
                     finalProject : 'FX Window'
                 },
                 {
-                    name : 'Android Masteclass',
-                    platform: 'Udemy',
+                    name : 'Android Masterclass',
+                    platform: {
+                        name: 'Udemy',
+                        icon: '/icons/python.svg'
+                    },
                     skills : 'Some',
-                    projectCount : 2,
                     obtained : 'Udemy Certificate',
                     finalProject : 'Roster Buster'
                 },
                 {
                     name : 'Java Certification Masterclass',
-                    platform: 'Oracle University',
+                    platform: {
+                        name: 'Oracle University',
+                        icon: '/icons/python.svg'
+                    },
                     skills : 'A lot',
-                    projectCount : 10,
                     obtained : 'Java SE 11 Certified Professional',
                     finalProject : 'None'
                 }
@@ -40,17 +46,21 @@ const testSections =
             courseList: [
                 {
                     name : 'CS50',
-                    platform: 'Harvard X',
+                    platform: {
+                        name: 'Harvard X',
+                        icon: '/icons/python.svg'
+                    },
                     skills : 'C, HTML, JS, CSS, Python, Flask',
-                    projectCount : 9,
                     obtained : 'Harvard X Certificate',
                     finalProject : 'This webpage!'
                 },
                 {
                     name : 'Python Masteclass',
-                    platform: 'Udemy',
+                    platform: {
+                        name: 'Udemy',
+                        icon: '/icons/python.svg'
+                    },
                     skills : 'Some',
-                    projectCount : 4,
                     obtained : 'Udemy Certificate',
                     finalProject : 'None'
                 }
