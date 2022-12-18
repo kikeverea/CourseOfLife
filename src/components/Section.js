@@ -1,10 +1,10 @@
 import Course from "./Course";
 
 const hrClass = {
-  border: 0,
-  height: 0,
-  borderTop: '1px solid rgba(0, 0, 0, 0.1)',
-  borderBottom: '1px solid rgba(255, 255, 255, 0.3)'
+  border: '0',
+  height: '1px',
+  background: '#333',
+  backgroundImage: 'linear-gradient(to right, #ccc, #333, #ccc)'
 }
 
 const Section = ({ section }) =>
