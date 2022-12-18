@@ -1,6 +1,7 @@
 import './App.css';
 import CourseOfLife from './components/CourseOfLife'
 import testSections from './helpers/testHelper'
+import UserDashboard from "./components/UserDashboard";
 
 const App = () => {
   return (
@@ -11,7 +12,19 @@ const App = () => {
             // <Course/>
                 //<tr>
   // <License/>
-  <CourseOfLife sectionList= { testSections }/>
+
+    // if state
+      //CourseOfLife
+    // else
+      // user dashboard
+
+
+    // <CourseOfLife sectionList= { testSections }/>
+    <UserDashboard user={{
+      name: 'Enrique Verea',
+      mail: 'kikeverea@gmail.com',
+      phone: '653 216 860'
+    }}/>
   );
 }
 
