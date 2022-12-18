@@ -8,23 +8,21 @@ const hrClass = {
 }
 
 const Section = ({ section }) =>
+  <>
     <div className='row mb-3'>
       <h1 className='display-2 p-0'>{ section.name }<span className='ms-3'>{ section.logo }</span></h1>
-      <table className="table table-borderless">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Skills</th>
-            <th scope="col">Project Count</th>
-            <th scope="col">Obtained</th>
-            <th scope="col">Final Project</th>
-          </tr>
-        </thead>
-        <tbody>
-          { section.courseList.map(course => <Course key = { course.name } course = { course } />) }
-        </tbody>
-      </table>
-      <hr className='hrClass mt-4'/>
     </div>
+    <div className='row mb-3'>
+      <div className='col'><strong>Course</strong></div>
+      <div className='col'><strong>Provider</strong></div>
+      <div className='col'><strong>Skills</strong></div>
+      <div className='col'><strong>Result</strong></div>
+      <div className='col'><strong>Final Project</strong></div>
+    </div>
+    { section.courseList.map(course => <Course key = { course.name } course = { course } />) }
+    <div className='row mb-3'>
+      <hr style={ hrClass } className='mt-4'/>
+    </div>
+  </>
 
 export default Section

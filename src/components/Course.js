@@ -1,10 +1,14 @@
+import './Course.css'
+
 const Course = ({ course }) =>
-    <tr>
-        <td>{ course.name }</td>
-        <td>{ course.skills }</td>
-        <td>{ course.projectCount }</td>
-        <td>{ course.obtained }</td>
-        <td>{ course.finalProject }</td>
-    </tr>
+        <div className='row mb-3'>
+                <div className='col'>{course.name}</div>
+                <div className='col'>{course.platform.name}
+                        <img src={course.platform.icon} alt='provider logo' className='favicon ms-2'/>
+                </div>
+                <div className='col'>{course.skills}</div>
+                <div className='col'>{course.obtained}</div>
+                <div className='col'>{course.finalProject}</div>
+        </div>
 
 export default Course
